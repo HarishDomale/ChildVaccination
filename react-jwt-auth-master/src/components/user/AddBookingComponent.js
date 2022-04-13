@@ -58,7 +58,7 @@ const AddBookingComponent = () => {
         <div className="container">
             <div className="row">
                 <div className="card col-md-6 offset-md-3 offset-md-3">
-                    <h2 className='text-center'>Book Vaccine Appointmnet</h2>
+                    <h2 className='text-center'>Book Vaccine Appointment</h2>
                     <div className="card-body">
                         <form>
                             <div className="form-group mb-2">
@@ -158,7 +158,7 @@ const AddBookingComponent = () => {
                                className="form-control"
                                value={vaccineName}
                                onChange={(e) => setVaccineName(e.target.value)}>
-                                   
+                                   <option>--Select Option--</option>
                                    {vaccines.map((vaccine)=>(
                                        
                                     <option key={vaccine.id}>{vaccine.vaccineName}</option>))}
@@ -174,7 +174,7 @@ const AddBookingComponent = () => {
                                className="form-control"
                                value={hospitalName}
                                onChange={(e) => setHospitalName(e.target.value)}>
-                                   
+                                    <option>--Select Option--</option>
                                    {hospitals.map((hospital)=>(
                                        
                                     <option key={hospital.id}>{hospital.hospitalName}</option>))}
